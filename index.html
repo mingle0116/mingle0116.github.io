@@ -172,7 +172,29 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h4 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h4><p>下载安装 node.js  (官网安装)    <a target="_blank" rel="noopener" href="https://nodejs.org/">https://nodejs.org</a><br>然后cmd +node<br>npm ：包管理器  node package management</p>
+<p>“node -v”：查看node 的版本<br>“npm root -g”查看全局包的路径地址<br> “npm -v”：查看npm的版本   </p>
+<p>“npm install -g cnpm –registry-<a href="https://registry.npm.taobao.org”:安装cnpm的">https://registry.npm.taobao.org”:安装cnpm的</a><br>“cnpm install -g hexo-cli”:国内镜像的cnpm 下载hexo框架</p>
+<h2 id="基本的配置：Windows-11"><a href="#基本的配置：Windows-11" class="headerlink" title="基本的配置：Windows 11 "></a>基本的配置：Windows 11 </h2><h4 id="基本流程"><a href="#基本流程" class="headerlink" title="基本流程"></a>基本流程</h4><ol>
+<li><p>安装node.js<br>通过npm 安装，先安装cnpm淘宝的镜像，再安装hexo<br>“npm install -g cnpm –registry-<a href="https://registry.npm.taobao.org”:安装cnpm的">https://registry.npm.taobao.org”:安装cnpm的</a></p>
+</li>
+<li><p>安装hexo<br>“cnpm install -g hexo-cli”:国内镜像的cnpm 下载hexo框架</p>
+</li>
+<li><p>通过hexo搭建个人博客<br>如果在cmd中进入磁盘的命令不行的，可以试一试这个语句：<br>“cd  &#x2F;d D:”返回：“cd ..&#x2F;”.<br>“md blog”:建立名为blog的文件夹<br>“hexo init”:hexo 的初始化<br>“dir”：查看当前文件夹的文件<br>“hexo s”：启动博客</p>
+</li>
+<li><p>编写博客  用到的工具：vim  语言: markdown<br>“<a target="_blank" rel="noopener" href="http://localhost:4000/%E2%80%9D%EF%BC%9A%E6%9C%AC%E5%9C%B0%E7%AB%AF%E5%8F%A34000">http://localhost:4000/”：本地端口4000</a> 开始的<br>“hexo n “tittle of article””:写新的博文<br>“good bye”:退出<br>“givm tittle.md”:使用gvim 打开md文件<br>按住esc ，然后输入“：wq”<br>“hexo clean “:清除一下<br>“hexo g”:重新生成<br>“hexo s ”：启动博客</p>
+</li>
+<li><p>把博客部署到github上面去<br>在github上面建立一个新创库，然后命名为github的用户名.github.io<br>“cnpm install hexo-deployer-git –save”:安装插件<br>然后再配置一下 _config.yml 文件中，找到deloyment<br>添加如下内容：<br>type:git<br>branch:master<br>repo:(建立新创库的地址)<a target="_blank" rel="noopener" href="https://github.com/github&#39;username/mingle0116.github.io.git">https://github.com/github&#39;username/mingle0116.github.io.git</a></p>
+</li>
+</ol>
+<p>“hexo d”：hexo 部署到远端<br>在此之前要 要在gitbash配置  初始化<br>语句是“git config user.name “github’username””<br>“git config user.email “xxx@””</p>
+<ol start="6">
+<li>更换主题<br>首先找到主题模板，然后克隆到theme 文件下就可部署<br>“git clone address.git themes&#x2F;theme’sname”<br>然后再_config.yml文件中的theme:landspace 改为 theme’sname即可</li>
+</ol>
+<h4 id="部署流程"><a href="#部署流程" class="headerlink" title="部署流程"></a>部署流程</h4><p>部署前预览的流程：<br>hexo clean<br>hexo g<br>hexo s</p>
+<p>部署远端的流程：<br>hexo d</p>
+<p>node.js 的环境配置的  相关内容  <a target="_blank" rel="noopener" href="http://t.csdn.cn/MfY9">http://t.csdn.cn/MfY9</a></p>
+
       
 
       
